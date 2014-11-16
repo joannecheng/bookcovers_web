@@ -31,7 +31,8 @@ dots = canvas
   .append("circle")
   .attr(
     fill: "black"
-    r: 2
+    strokeWeight: 0
+    r: -> Math.random() * 3 + 1
     cx: (d) -> d[0]
     cy: (d) -> d[1]
   )
@@ -44,7 +45,9 @@ lines = canvas
   .enter()
   .append("line")
   .attr(
+    opacity: 0.15
     stroke: "#000"
+    strokeWeight: 1
     x1: (d) -> d[0]
     y1: (d) -> d[1]
     x2: (d) -> d[2]
