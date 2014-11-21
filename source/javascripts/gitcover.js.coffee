@@ -9,7 +9,7 @@ $ ->
     .append("g")
     .attr("transform", "translate(#{padding},#{padding})")
 
-  allPoints = new Points(200, w, h)
+  allPoints = new Points(numPoints, w, h)
 
   dots = canvas
     .append("g")
